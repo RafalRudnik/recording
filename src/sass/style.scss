@@ -74,6 +74,10 @@ section {
 		font-size: 2rem;
 		color: $greenTxt;
 		cursor: pointer;
+		transition: transform 0.4s;
+		&:hover {
+			transform: rotate(360deg);
+		}
 	}
 }
 

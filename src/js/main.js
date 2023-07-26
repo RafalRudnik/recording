@@ -3,6 +3,7 @@ const mobbDiv = document.querySelector('.mobbdeep');
 const nasAudio = new Audio('../Nas.mp3');
 const nasDiv = document.querySelector('.artists__images-nas');
 const currentYear = document.querySelector('footer p span');
+const menuBtn = document.querySelector('.nav__burger')
 
 mobbDiv.addEventListener('mouseenter', () => {
 	mobbAudio.play();
