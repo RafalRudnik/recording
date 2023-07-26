@@ -76,5 +76,16 @@
 				font-size: 5rem;
 			}
 		}
+		&__bg {
+			font-size: 3rem;
+			height: 700px;
+			&-contact,
+			&-social {
+				width: 60%;
+				i {
+					font-size: 5rem;
+				}
+			}
+		}
 	}
 }

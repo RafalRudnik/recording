@@ -7,6 +7,7 @@ const nasImg = document.querySelectorAll('.nas-img');
 const mobbImg = document.querySelector('.mobbdeep');
 const mobbEvent = document.querySelector('.events__card-title');
 const supportList = document.querySelector('.events__scard-list');
+const studio = document.querySelector('.studio__img-desc');
 
 let resolution = gsap.matchMedia();
 
@@ -137,6 +138,25 @@ resolution.add('(min-width: 768px)', () => {
 				trigger: supportList,
 				start: 'top: 60%',
 				end: 'top: 0%',
+				scrub: true,
+			},
+		}
+	);
+	gsap.fromTo(
+		studio,
+		{
+			y: '-=600px',
+			scale: 0.4,
+		},
+		{
+			y: 0,
+			scale: 1,
+			duration: 2.5,
+			ease: 'easeInOut',
+			scrollTrigger: {
+				trigger: studio,
+				start: 'top: 80%',
+				end: 'top: -20%',
 				scrub: true,
 			},
 		}
