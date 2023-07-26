@@ -1,0 +1,75 @@
+@media (min-width: 992px) {
+	.header {
+		&__txt {
+			&-one {
+				font-size: 8rem;
+			}
+			&-two {
+				font-size: 20rem;
+				letter-spacing: -20px;
+			}
+			&-three {
+				font-size: 4rem;
+				&::before {
+					left: -70px;
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+	}
+	.section__heading {
+		top: -150px;
+		font-size: 28rem;
+		letter-spacing: -30px;
+	}
+
+	.artists {
+		&__images {
+			&--top {
+				margin-top: 40em;
+			}
+			&-img-big {
+				order: 0;
+				width: 537px;
+			}
+		}
+	}
+	.events {
+		&__card {
+			padding-top: 30em;
+			&-desc {
+				h2 {
+					color: $main-color;
+					font-size: 4rem;
+				}
+				p {
+					font-size: 2rem;
+					color: $mediumTxt;
+					span {
+						color: $lightGreen;
+						font-weight: bold;
+						font-size: 6rem;
+					}
+				}
+			}
+			&-title {
+				bottom: 25%;
+				font-size: 7rem;
+			}
+		}
+		&__support {
+			font-size: 6rem;
+		}
+	}
+	.event-img {
+		display: none;
+	}
+	.studio {
+		&__img {
+			&-desc {
+				font-size: 6rem;
+			}
+		}
+	}
+}
